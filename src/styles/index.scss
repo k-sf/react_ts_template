@@ -1,0 +1,30 @@
+@import-normalize; /* bring in normalize.css styles */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import './variables.scss';
+@import './helpers.scss';
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 960px;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-base-size);
+  color: var(--font-primary-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

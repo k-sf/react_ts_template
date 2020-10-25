@@ -1,0 +1,64 @@
+.root {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 8px;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.icon {
+  width: 100%;
+}
+
+.small {
+  width: 32px;
+  height: 32px;
+
+  .icon {
+    max-width: 16px;
+    max-height: 16px;
+  }
+}
+
+.medium {
+  width: 40px;
+  height: 40px;
+
+  .icon {
+    max-width: 18px;
+    max-height: 18px;
+  }
+}
+
+.large {
+  width: 48px;
+  height: 48px;
+
+  .icon {
+    max-width: 22px;
+    max-height: 22px;
+  }
+}
+
+.border {
+  border: solid 1px var(--color-primary);
+}
+
+.border:focus,
+.border:hover {
+  background-color: var(--color-primary-lighter);
+  box-shadow: 0 0 0 1px var(--color-primary);
+}
+
+.outline:active {
+  background-color: var(--color-primary-light);
+  box-shadow: 0 0 0 1px var(--color-primary);
+}

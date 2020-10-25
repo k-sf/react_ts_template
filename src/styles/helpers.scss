@@ -1,0 +1,13 @@
+@import './typography.module.scss';
+
+.link {
+  @extend .caption1;
+  color: var(--color-primary);
+
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
